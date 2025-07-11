@@ -1,50 +1,75 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# My First React Native App 🚀
 
-## Get started
+Welcome to my first hands-on journey with **React Native**, built using **Expo**, **Expo Router**, and **Zustand** for global state. This app is structured with stack, tab, and modal navigation.
 
-1. Install dependencies
+## 📦 Tech Stack
 
-   ```bash
-   npm install
-   ```
+- **React Native** (with Expo SDK)
+- **Expo Router** – file-based navigation
+- **Zustand** – global state management
+- **Async Storage** (coming soon)
+- **Atomic Design Pattern** (coming soon)
 
-2. Start the app
+## 📱 Features
 
-   ```bash
-   npx expo start
-   ```
+- 🧭 **Multi-layer Navigation**  
+  - Tabs (bottom navigation)
+  - Stacks (within tabs)
+  - Modals (presented on top)
 
-In the output, you'll find options to open the app in a
+- 🧠 **Global State with Zustand**  
+  Shared message logic across screens
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- 📂 **Clean File Structure**  
+  Organized using `(tabs)/`, `(stack)/`, `(modals)/`
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📁 Directory Structure
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+app/
+├── (tabs)/             # Tab screens
+│   ├── index.tsx       # Home screen
+│   └── details.tsx
+├── (stack)/            # Stack screens
+│   └── profile.tsx
+├── (modals)/           # Modal screens
+│   ├── _layout.tsx
+│   └── modal.tsx
+├── _layout.tsx         # Root layout
+├── store/              # Zustand global state
+│   └── messageStore.ts
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🏁 Getting Started
 
-## Learn more
+```bash
+npm install
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Scan the QR code with **Expo Go** or use an emulator/web view.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## ✅ Progress
 
-## Join the community
+| Day | Module                         | Status |
+|-----|--------------------------------|--------|
+| 1   | Initial setup & navigation     | ✅ Done |
+| 2   | State interaction & buttons    | ✅ Done |
+| 3   | Modal screen & routing cleanup | ✅ Done |
+| 4   | Zustand global state           | ✅ In Progress |
 
-Join our community of developers creating universal apps.
+## 🧠 Author
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Built by **Abraham Bortey Danfa**  
+Front-End Dev & Designer  
+🇬🇭 Ghana
+
+---
+
+## 🧭 Next Steps
+
+- [ ] Async Storage
+- [ ] API Mocking & Fetching
+- [ ] Atomic Design refactor
+- [ ] Theme toggle
